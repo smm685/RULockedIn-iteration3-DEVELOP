@@ -24,6 +24,9 @@ export default defineConfig([
         setTimeout: "readonly",
       },
     },
+    rules: {
+      "no-unused-vars": "warn",
+    },
   },
   {
     files: ["client.js"],
@@ -36,6 +39,9 @@ export default defineConfig([
         fetch: "readonly",
         console: "readonly",
       },
+    },
+    rules: {
+      "no-unused-vars": "warn",
     },
   },
   {
@@ -59,6 +65,9 @@ export default defineConfig([
         document: "readonly",
         window: "readonly",
       },
+    },
+    rules: {
+      "no-unused-vars": "warn",
     },
   },
   {
