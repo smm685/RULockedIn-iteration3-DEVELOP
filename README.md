@@ -34,6 +34,7 @@ Acceptance Criteria: A new user clicks join as guest and are able to access the 
 
 
 Key functions for Iteration 2:
+
 Feature: User can chat with LLM
 User Story: As a logged-in user, I want to type a question and receive a response from an LLM so that I can get answers to my questions.
 Acceptance Criteria: The logged-in user is redirected to the chat page where they see a text input box and a send button. The user types their question into the text input box and clicks the send button or presses Enter. The user's message appears in the chat window. The LLM processes the message and returns a response which is displayed below the user's message in the chat window. If the LLM fails to respond, an error message is displayed to the user.
