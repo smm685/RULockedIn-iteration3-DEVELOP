@@ -138,3 +138,35 @@ Acceptance Criteria: The user sees a search bar on the conversation history area
 Feature: User can continue a previous conversation
 User Story: As a logged-in user, I want to select a past conversation and continue chatting in it so that the LLM remembers the context of what we already discussed.
 Acceptance Criteria: The user opens a past conversation from the conversation history list. The full previous conversation is loaded in the chat window showing all prior messages. The user types a new message and clicks send. The LLM receives the previous conversation context along with the new message and responds with awareness of the prior conversation. The new messages are appended and saved to that same conversation. The conversation's timestamp and preview updates in the history list.
+
+
+
+Key functions for Iteration 3:
+
+Feature: User can select the backend LLM
+User Story: As a user, I want to choose my backend LLM.
+Acceptance Criteria: The user sees a model selection dropdown on the chat page before sending a message. The menu displays the available backend LLM. The user selects a model and can then send a prompt. The selected model will generate a response which is shown in the chat window.
+
+Feature: User can use small models running locally
+User Story: As a user, I want to access small local models so that I can use the system without internet.
+Acceptance Criteria: The model selection menu includes locally hosted small models. The user can select a local model and then send a prompt. The prompt is routed to the local backend model then displayed in the chat window. The system labels the response with the model name.
+
+Feature: User can ask math questions to the backend LLM
+User Story: As a user, I want to ask math questions to the backend LLM.
+Acceptance Criteria: The user enters a math question in the chat input box and sends it to the selected model. The backend LLM returns a math-related response in the chat window and actually attempts to solve the problem.
+
+Feature: User can ask weather questions to the backend LLM
+User Story: As a user, I want to ask weather questions to the backend LLM.
+Acceptance Criteria: The user types a weather-related question into the chat input box and sends it. The backend LLM processes the request and returns a response in the chat window.
+
+Feature: User can compare two models side by side
+User Story: As a user, I want to choose two models and compare their responses side by side.
+Acceptance Criteria: The user clicks the Compare Models button and selects two models. The user types one prompt and sends it once so both models receive the same prompt. Their responses are displayed side by side in separate panels. If one model fails, the other model's response is still shown and the failed side displays an error message.
+
+Feature: User can save model comparison results in chat history
+User Story: As a logged-in user, I want model comparison chats to be saved so that I can review them later.
+Acceptance Criteria: When a logged-in user sends a prompt in comparison mode, both model responses are saved. The user can find them under the Comparison History tab. The model used is labeled above both responses.
+
+Feature: User can continue a previous comparison conversation
+User Story: As a logged-in user, I want to continue a previous side-by-side comparison conversation.
+Acceptance Criteria: The user opens a saved comparison conversation from the history list. The previous messages and both model response panels are loaded. The user sends a new prompt and both selected models respond again side by side.
